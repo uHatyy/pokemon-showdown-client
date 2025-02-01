@@ -101,7 +101,7 @@ class ModifiableValue {
 			if (name) this.comment.push(` (${name})`);
 			this.value = 0;
 			this.maxValue = 0;
-			return true;
+			return true; 
 		}
 		if (name) this.comment.push(` (${this.round(factor)}&times; from ${name})`);
 		this.value *= factor;
@@ -2656,10 +2656,10 @@ class BattleStatGuesser {
 					}
 					moveCount['Support']++;
 				}
-			} else if (['counter', 'endeavor', 'metalburst', 'mirrorcoat', 'rapidspin'].includes(move.id)) {
+			} else if (['counter', 'endeavor', 'metalburst', 'mirrorcoat', 'comeuppance', 'rapidspin'].includes(move.id)) {
 				moveCount['Support']++;
 			} else if ([
-				'nightshade', 'seismictoss', 'psywave', 'superfang', 'naturesmadness', 'foulplay', 'endeavor', 'finalgambit', 'bodypress',
+				'nightshade', 'seismictoss', 'psywave', 'superfang', 'naturesmadness', 'ruination', 'guardianofalola', 'foulplay', 'endeavor', 'finalgambit', 'bodypress', 'dragonrage', 'sonicboom', 'fissure', 'horndrill', 'sheercold', 'guillotine',
 			].includes(move.id)) {
 				moveCount['Offense']++;
 			} else if (move.id === 'fellstinger') {
